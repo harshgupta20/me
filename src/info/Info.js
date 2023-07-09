@@ -55,7 +55,7 @@ export const info = {
             label: 'youtube'
         },
         {
-            link: "https://instagram.com/developer.guru",
+            link: "https://instagram.com/i.m.harshgupta",
             icon: 'fa fa-instagram',
             label: 'instagram'
         },
