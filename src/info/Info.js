@@ -10,8 +10,8 @@ export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
 export const info = {
     firstName: "Harsh",
     lastName: "Gupta",
-    initials: "< />", 
-    position: "Software Developer",
+    initials: "< />",
+    position: "Software Engineer",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
@@ -59,14 +59,29 @@ export const info = {
             icon: 'fa fa-instagram',
             label: 'instagram'
         },
-  ],
-    bio: "Hello! I'm Harsh Gupta. I'm a Software Engineer who creates beautiful user friendly application. I studied Computer Science at SRM University, Apart from technical expertise i teach coding and building developer community which has grown to 70k+ combine over social platforms and been integral part of many global open-source and developer communities along my journey. You should hire me!",
+    ],
+    bio: "Hello! I'm Harsh Gupta. I'm a Software Engineer who creates beautiful user friendly application. I studied Computer Science at SRM University, I specialize in building scalable, user-centric applications using modern technologies like React.js, Next.js, and Tailwind CSS. My portfolio includes projects such as DeepTalk, a platform for AI customer interaction; I-R-E-S, a blockchain-based digital document verifier; and devhope.io, a job application platform with a focus on seamless user experience. With strong frontend and backend expertise, I bring innovative solutions to complex problems and a passion for delivering exceptional results.",
     skills:
+    {
+        proficientWith: ['React.js', 'Next.js', 'javascript', 'Sequelize', 'Node.js', 'Express.js', 'TailwindCSS', 'Firebase', 'Git', 'Bootstrap', 'HTML5', 'CSS3', 'Material-UI',],
+        exposedTo: ['Visual Studio', 'github', 'Figma', 'gitlab']
+    },
+    experience: [
         {
-            proficientWith: ['javascript', 'react', 'firebase', 'git', 'bootstrap', 'html5', 'css3', 'material-UI', ],
-            exposedTo: ['Visual Studio', 'github', 'Adobe XD']
+            company: "SRM University",
+            position: "Undergraduate Student",
+            website: "https://www.srmuniv.ac.in/",
+            startDate: "2022",
+            endDate: "Present"
+        },
+        {
+            company: "SRM University",
+            position: "Volunteer",
+            website: "https://www.srmuniv.ac.in/",
+            startDate: "2022",
+            endDate: "Present"
         }
-    ,
+    ],
     hobbies: [
         {
             label: 'Reading',
@@ -86,10 +101,10 @@ export const info = {
         }
 
     ],
-    portfolio: [ 
+    portfolio: [
         {
             title: "Youtube Clone",
-            live: "https://clone-78ac5.web.app/", 
+            live: "https://clone-78ac5.web.app/",
             source: "https://github.com/harshgupta20/clone-youtube",
             image: mock1
         },

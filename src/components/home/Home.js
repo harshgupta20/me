@@ -9,6 +9,22 @@ import {info} from "../../info/Info";
 
 export default function Home() {
 
+   function openLinkInNewTab(url) {
+      if (!url) {
+        console.error("URL is required to open a new tab.");
+        return;
+      }
+      
+      const newTab = window.open(url, '_blank');
+      
+      if (newTab) {
+        newTab.focus(); // Ensure the new tab is focused
+      } else {
+        console.error("Failed to open the link. It might be blocked by the browser's pop-up blocker.");
+      }
+    }
+    
+
    return (
       <Box component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'column'}} alignItems={'center'}
            justifyContent={'center'} minHeight={'calc(100vh - 175px)'}>
@@ -24,6 +40,9 @@ export default function Home() {
                   <EmojiBullet key={index} emoji={bio.emoji} text={bio.text}/>
                ))}
             </Box> */}
+
+            <p onClick={() => openLinkInNewTab('https://drive.google.com/drive/folders/1qUgPmpQFu9SoJceEhbmnj41AyXYCNVdA?usp=sharing')} style={{fontStyle: 'italic', textAlign:'center', marginTop: '1rem', padding: "10px 10px", backgroundColor: info.baseColor, color: 'black', borderRadius: '0.5rem', cursor: 'pointer'}}>My Resume</p>
+
             <Box display={'flex'} gap={'1.5rem'} justifyContent={'center'} marginTop={'1.5rem'} fontSize={{xs: '2rem', md: '2.5rem'}}>
                {info.socials.map((social, index) => (
                   <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} />
